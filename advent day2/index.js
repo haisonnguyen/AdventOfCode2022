@@ -10,23 +10,6 @@ async function read_input(file_name) {
     return  data.replace(/\r/g, '').split('\n');
 }
 
-
-// (1 for Rock, 2 for Paper, and 3 for Scissors) plus the score for the outcome of the round (0 if you lost, 3 if the round was a draw, and 6 if you won).
-const move_values = {
-    'Rock': 1,
-    'Paper': 2,
-    'Scissors': 3
-}
-
-const moves  = {
-    'A': 'Rock',
-    'B': 'Paper',
-    'C': 'Scissor',
-    'X': 'Rock',
-    'Y': 'Paper',
-    'Z': 'Scissor',
-}
-
 // x is your opponent's move
 // y is the strategy guide suggestion
 function calculateRound(x,y) {
